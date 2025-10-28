@@ -4,15 +4,17 @@
     "php": "^8.1",
     "twig/twig": "^3.0"
   },
-  "scripts": {
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/tailwind.css --minify",
-    "build": [
-      "@build-css"
-    ]
-  },
   "autoload": {
     "psr-4": {
       "App\\": "src/"
     }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "npx tailwindcss -i ./src/input.css -o ./public/assets/css/tailwind.css --minify"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true
   }
 }

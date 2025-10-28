@@ -1,6 +1,3 @@
-# .gitignore
-node_modules/
-vendor/
-public/assets/css/tailwind.css
-.env
-.DS_Store
+echo node_modules/ > .gitignore
+echo vendor/ >> .gitignore
+echo public/assets/css/tailwind.css >> .gitignore
