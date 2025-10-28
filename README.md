@@ -19,11 +19,7 @@ fully deployable on **Render (via Docker)**.
 
 🔗 **Live Link:** [https://ticketapp-twig-s96x.onrender.com/]
 
-## Login Credentials 
-  email: test@gmail.com
-  password: abc123
 
----
 
 ## 🧱 Tech Stack
 
