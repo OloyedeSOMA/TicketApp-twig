@@ -1,0 +1,31 @@
+<header class="bg-white border-b border-gray-200 px-4 py-3">
+  <div class="flex items-center justify-between max-w-7xl mx-auto">
+    <div class="flex items-center gap-3">
+      <img src="/assets/icons/TicketLogo.svg" alt="" class="w-8 h-8">
+      <h1 class="hidden md:block text-xl font-bold text-gray-900">Ticket Manager Pro</h1>
+    </div>
+
+    <div class="flex items-center gap-4" x-show="$store.auth.user">
+      <a 
+        href="/dashboard" 
+        :class="$store.auth.isActive('/dashboard.php') ? 'text-indigo-700 font-medium hover:text-indigo-600' : 'text-indigo-400 font-medium hover:text-indigo-500'"
+      >Dashboard</a>
+      <a 
+        href="/tickets" 
+        :class="$store.auth.isActive('/tickets.php') ? 'text-indigo-700 font-medium hover:text-indigo-600' : 'text-indigo-400 font-medium hover:text-indigo-500'"
+      >Tickets</a>
+      
+      <span class="text-gray-700 hidden sm:block">
+        <b x-text="$store.auth.user.name"></b>
+      </span>
+
+      <button 
+        @click="Alpine.store('auth').logout()" 
+        class="flex items-center gap-2 text-gray-600 hover:text-purple-600 cursor-pointer"
+      >
+        <img src="/assets/icons/logout.svg" alt="Logout" class="w-5 h-5">
+        <span>Logout</span>
+      </button>
+    </div>
+  </div>
+</header>
