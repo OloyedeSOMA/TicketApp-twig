@@ -17,7 +17,7 @@ fully deployable on **Render (via Docker)**.
 
 ## 🚀 Live Demo
 
-🔗 **Live Link:** [[https://ticketapp-twig.onrender.com](https://ticketapp-twig-s96x.onrender.com)]
+🔗 **Live Link:** [https://ticketapp-twig-s96x.onrender.com/]
 
 ## Login Credentials 
   email: test@gmail.com
