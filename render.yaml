@@ -2,11 +2,8 @@ services:
   - type: web
     name: TicketApp-twig
     env: php
-    region: oregon
     plan: free
-    buildCommand: |
-      composer install --no-dev --optimize-autoloader
-      npx tailwindcss@3 -i ./src/input.css -o ./public/assets/css/tailwind.css --minify
-    startCommand: vendor/bin/heroku-php-apache2 public/
-    envVars:
-      PHP_VERSION: 8.2
+    region: oregon
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:10000 -t public
+
