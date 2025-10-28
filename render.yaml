@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ticket-manager-pro
+    name: TicketApp-twig
     env: php
     region: oregon
     plan: free
