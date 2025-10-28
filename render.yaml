@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ticket-manager-pro
+    env: php
+    region: oregon
+    plan: free
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      npm install
+      npm run build-css
+    startCommand: vendor/bin/heroku-php-apache2 public/
+    envVars:
+      PHP_VERSION: 8.2
