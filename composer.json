@@ -9,11 +9,6 @@
       "App\\": "src/"
     }
   },
-  "scripts": {
-    "post-autoload-dump": [
-      "npx tailwindcss -i ./src/input.css -o ./public/assets/css/tailwind.css --minify"
-    ]
-  },
   "config": {
     "optimize-autoloader": true
   }

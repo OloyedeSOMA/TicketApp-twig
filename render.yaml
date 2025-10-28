@@ -6,8 +6,7 @@ services:
     plan: free
     buildCommand: |
       composer install --no-dev --optimize-autoloader
-      npm install
-      npm run build-css
+      npx tailwindcss@3 -i ./src/input.css -o ./public/assets/css/tailwind.css --minify
     startCommand: vendor/bin/heroku-php-apache2 public/
     envVars:
       PHP_VERSION: 8.2
