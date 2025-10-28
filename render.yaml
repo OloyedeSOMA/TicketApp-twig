@@ -1,9 +1,10 @@
 services:
   - type: web
     name: TicketApp-twig
-    env: php
+    runtime: php
     plan: free
     region: oregon
     buildCommand: ""
     startCommand: php -S 0.0.0.0:10000 -t public
+
 
