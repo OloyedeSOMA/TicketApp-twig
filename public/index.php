@@ -39,10 +39,10 @@ $uri = $uri === '' || $uri === 'index.php' ? '/' : '/' . $uri;
 
 // === FEATURES (EXAMPLE DATA) ===
 $features = [
-    ['icon' => 'ticket.svg', 'color' => 'bg-blue-100 text-blue-600', 'title' => 'Create Tickets', 'desc' => 'Quickly create...'],
-    ['icon' => 'chart.svg', 'color' => 'bg-yellow-100 text-yellow-600', 'title' => 'Track Progress', 'desc' => 'Monitor...'],
-    ['icon' => 'check.svg', 'color' => 'bg-green-100 text-green-600', 'title' => 'Resolve Faster', 'desc' => 'Streamline...'],
-    ['icon' => 'zap.svg', 'color' => 'bg-purple-100 text-purple-600', 'title' => 'Boost Productivity', 'desc' => 'Increase...'],
+    ['icon' => 'ticket.svg', 'color' => 'bg-blue-100 text-blue-600', 'title' => 'Create Tickets', 'desc' => 'Quickly create and organize support tickets with detailed descriptions and priorities.'],
+    ['icon' => 'chart.svg', 'color' => 'bg-yellow-100 text-yellow-600', 'title' => 'Track Progress', 'desc' => 'Monitor ticket status in real-time and keep your team aligned on priorities.'],
+    ['icon' => 'check.svg', 'color' => 'bg-green-100 text-green-600', 'title' => 'Resolve Faster', 'desc' => 'Streamline your workflow and close tickets efficiently with smart organization.'],
+    ['icon' => 'zap.svg', 'color' => 'bg-purple-100 text-purple-600', 'title' => 'Boost Productivity', 'desc' => 'Increase team efficiency with intuitive tools and clear visibility into all tickets.'],
 ];
 
 // === ROUTES ===
