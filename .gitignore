@@ -1,0 +1,6 @@
+# .gitignore
+node_modules/
+vendor/
+public/assets/css/tailwind.css
+.env
+.DS_Store
